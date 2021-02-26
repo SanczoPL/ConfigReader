@@ -11,6 +11,12 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${FLAGS_COMMON}")
 
 set(CMAKE_AUTOMOC ON)
 
+file(MAKE_DIRECTORY "${CMAKE_BINARY_DIR}")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}")
+
+
+
+
 if (WIN32)
 	list(APPEND CMAKE_PREFIX_PATH "E:\\Qt\\5.12.8\\msvc2017_64")
 	list(APPEND CMAKE_PREFIX_PATH "E:\\repo\\spdlog\\build\\install")
@@ -18,8 +24,8 @@ if (WIN32)
 endif (WIN32)
 
 
-find_package(spdlog REQUIRED)
-find_package(IncludeSpdlog REQUIRED)
+find_package(spdlog)
+find_package(IncludeSpdlog)
 find_package(Qt5Core REQUIRED)
 find_package(Threads REQUIRED)
 
