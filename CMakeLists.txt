@@ -19,6 +19,7 @@ endif (WIN32)
 
 find_package(spdlog)
 find_package(IncludeSpdlog)
+
 find_package(Qt5Core REQUIRED)
 find_package(Threads REQUIRED)
 
