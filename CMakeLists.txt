@@ -14,7 +14,7 @@ set(CMAKE_AUTOMOC ON)
 if (WIN32)
 	list(APPEND CMAKE_PREFIX_PATH "E:\\Qt\\5.15.2\\msvc2019_64")
 	list(APPEND CMAKE_PREFIX_PATH "E:\\repo\\spdlog\\build\\install")
-	list(APPEND CMAKE_PREFIX_PATH "E:\\repo\\IncludeSpdlog\\build\\install")
+	list(APPEND CMAKE_PREFIX_PATH "H:\\repo3\\IncludeSpdlog\\build\\install")
 endif (WIN32)
 
 find_package(spdlog)
